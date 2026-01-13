@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22190983&assignment_repo_type=AssignmentRepo)
 # Add, Remove, and Toggle
 ## How can I change the classes an element has as I interact with the page?
 
@@ -76,7 +77,7 @@ Students will be able to:
 
     - use `innerHTML` to change the text of the button from "Delete Message(s)" to "Undo Deletion"
 
-    When "Undo Deletion" is clicked, the inbox should reappear and the text should change back to "Delete Message(s)".
+   // When "Undo Deletion" is clicked, the inbox should reappear and the text should change back to "Delete Message(s)".
 
 4. Code the "Mark as Read" to do the following:
 
