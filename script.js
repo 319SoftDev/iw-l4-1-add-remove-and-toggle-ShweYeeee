@@ -7,7 +7,14 @@ const changefontcolor = (e) => {
 
 heading.addEventListener("click", changefontcolor);
 
+
 subheading.addEventListener("click", changefontcolor);
+
+const toggleblue = (e) => {
+    e.target.classList.toggle("blue-text");
+}
+heading.addEventListener("dblclick", toggleblue);
+subheading.addEventListener("dblclick", toggleblue);
 
 const replybutton = document.querySelector("#reply-button");
 const replymessage = document.querySelector("#reply-message");
@@ -56,3 +63,46 @@ const closeinboxmsg = () => {
 }
 
 close.addEventListener("click", closeinboxmsg);
+
+const checkbox = document.querySelector("#checkbox");
+const actionbuttons = document.querySelector("#action-buttons");
+
+const checkboxfunc = (e) => {
+    inbox.classList.toggle("is-selected");
+    actionbuttons.classList.toggle("hidden");
+}
+
+checkbox.addEventListener("click", checkboxfunc);
+
+
+const meowbutton = document.querySelector("#meow");
+
+const togglemeow = () => {
+    meowbutton.classList.toggle("hidden");
+}
+
+subheading.addEventListener("click", togglemeow);
+
+const deletemsg = document.querySelector("#delete-button");
+
+const deletemessage = () => {
+    inbox.classList.toggle("hidden");
+    inboxmessage.classList.toggle("hidden");
+    replymessage.classList.toggle("hidden");
+    deletemsg.innerHTML = "undo deltetion";
+    
+} 
+
+deletemsg.addEventListener("click", deletemessage,);
+
+const markreadbutton = document.querySelector("#markread-button");
+
+const markreadmessage = () => {
+    inbox.classList.add("is-read");
+    inboxmessage.classList.add("hidden");
+    replymessage.classList.add("hidden");
+    checkboxfunc();
+    checkbox.checked = false;
+    checkbox.disabled = true;
+}
+markreadbutton.addEventListener("click", markreadmessage);

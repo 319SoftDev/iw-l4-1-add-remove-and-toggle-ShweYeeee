@@ -77,7 +77,7 @@ Students will be able to:
 
     - use `innerHTML` to change the text of the button from "Delete Message(s)" to "Undo Deletion"
 
-    When "Undo Deletion" is clicked, the inbox should reappear and the text should change back to "Delete Message(s)".
+   // When "Undo Deletion" is clicked, the inbox should reappear and the text should change back to "Delete Message(s)".
 
 4. Code the "Mark as Read" to do the following:
 
